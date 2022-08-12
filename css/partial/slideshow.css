@@ -1,0 +1,66 @@
+.warp {
+    background-color: var(--card-bg-color);
+}
+
+.body-fit {
+    height: 500px;
+    display: flex;
+}
+
+.body-fit > div {
+    flex-grow: 1 1 50%;
+}
+
+.body-fit .body-fit-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+
+    font-family: var(--primary-font);
+}
+
+.body-fit .body-fit-text h1 {
+    font-size: var(--large-fz);
+    line-height: 66px;
+    font-weight: 300;
+}
+
+.body-fit .body-fit-text .title1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.body-fit .body-fit-text .title2 {
+    margin-bottom: 25px;
+}
+
+.body-fit .body-fit-text p {
+    font-size: 25px;
+}
+
+.body-fit .body-fit-text h1 span {
+    font-weight: 700;
+}
+
+.body-fit .body-fit-img {
+    display: flex;
+    transition: all .8s;
+}
+
+.body-fit .body-fit-img img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.body-fit .body-fit-img:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    .body-fit {
+        flex-direction: column;
+        height: auto;
+    }
+}
